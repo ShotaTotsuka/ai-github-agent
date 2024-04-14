@@ -11,6 +11,7 @@ load_dotenv(verbose=True)
 repo_url = "https://github.com/totsukash/go-ai-agent-test.git"
 
 
+# git cloneコマンドを実行
 def git_clone(repo_url):
     # カレントディレクトリを取得
     current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -29,6 +30,12 @@ def git_clone(repo_url):
         print(f"git cloneの実行中にエラーが発生しました: {e}")
 
 
+# projects配下を1つのファイルにまとめる
+def merge_files():
+    print("merge files!")
+
+
+# AIチャットを実行
 def ai_chat(message) -> str:
     session = boto3.Session(
         aws_access_key_id=os.getenv("AWS_ACCESS_KEY_ID"),
