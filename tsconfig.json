@@ -1,8 +1,0 @@
-{
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "dotenv": ["node_modules/dotenv"]
-    }
-  }
-}
